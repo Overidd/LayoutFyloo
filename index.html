@@ -22,21 +22,27 @@
 </head>
 
 <body class="">
+  <label for="check" class="bg-gray-500 mt-16 block w-16 ">
+    <div class="bg-white"></div>
+    <input type="checkbox" onclick="darkThema()">
+  </label>
+
 
   <header class="w-[90%] max-w-7xl mx-auto">
     -
   </header>
 
-  <main class="bg-[var(--LightGrayishBlue)] text-[var(--VeryDarkBlue)] relative pb-20 mt-36 text-balance">
+  <main
+    class="bg-[var(--LightGrayishBlue)] text-[var(--VeryDarkBlue)] relative pb-20 mt-36 text-balance">
     <figure>
       <img src="images/bg-curve-mobile.svg" alt="" class=" absolute  bottom-[100%] w-full -z-10 md:hidden">
       <img src="images/bg-curve-desktop.svg" alt="" class=" hidden absolute bottom-[100%] -z-10 w-full md:block">
     </figure>
-    <div class=" w-[90%] mx-auto flex flex-col gap-16 flex-wrap lg:flex-row">
+    <section class=" w-[90%] mx-auto flex flex-col gap-16 flex-wrap lg:flex-row">
       <figure class="flex-1">
         <img src="images/illustration-2.svg" alt="illustration-2 ">
       </figure>
-      <section class="flex-1 text-center space-y-5 m-auto md:text-left md:-order-1">
+      <article class="flex-1 text-center space-y-5 m-auto md:text-left md:-order-1">
         <h2 class="font-bold text-xl md:text-4xl">
           Stay productive, wherever you are
         </h2>
@@ -52,7 +58,7 @@
           <a href="#">See how Fylo works</a>
           <img src="images/icon-arrow.svg" alt="" class="inline-block w-5">
         </button>
-        <div class="bg-white md:max-w-[70%] shadow-xl p-8 space-y-3 rounded-lg text-left">
+        <div class="bg-white md:max-w-[60%] shadow-xl p-8 space-y-3 rounded-lg text-left">
           <img src="images/icon-quotes.svg" alt="quotes" class="w-5">
           <p class="opacity-90 md:text-lg">
             Fylo has improved our team productivity by an order of magnitude. Since
@@ -66,12 +72,13 @@
             </p>
           </div>
         </div>
-      </section>
-    </div>
+      </article>
+    </section>
   </main>
 
   <aside class="bg-[var(--DesaturatedBlue)] text-white text-center text-balance">
-    <div class="w-[90%] m-auto flex flex-col justify-between items-center gap-8 md:flex-row py-16 xl:py-24 md:text-left">
+    <section
+      class="w-[90%] m-auto flex flex-col justify-between items-center gap-8 md:flex-row py-16 xl:py-24 md:text-left">
       <div class="space-y-5 md:basis-[45%]">
         <h2 class="font-medium text-lg md:text-2xl">
           Stay productive, wherever you are
@@ -82,15 +89,26 @@
         </p>
       </div>
       <form action="" class="w-[85%] md:basis-[45%]">
-        <input type="text" placeholder="email@example.com" class="p-2 w-full rounded-sm mb-3 md:p-4">
+        <input type="email" placeholder="email@example.com" 
+          class="w-full p-2 text-[var(--DesaturatedBlue)] font-medium rounded-md focus-visible:outline-none border border-transparent invalid:border-red-600 peer md:p-4 md:text-lg"/>
+        <span class=" hidden peer-invalid:block ">
+          please check your email
+        </span>
         <input type="submit" value="Get Started For Free"
-          class="bg-[var(--BrightBlue)] p-2 w-full rounded-sm md:w-fit md:p-4">
+          class="bg-[var(--BrightBlue)] p-2 mt-3 w-full rounded-md cursor-pointer hover:brightness-110 hover:border-[var(--BrightBlue)] md:w-fit md:p-4 md:text-lg">
       </form>
-    </div>
+    </section>
   </aside>
 
   <footer class="w-[90%] max-w-7xl mx-auto">
 
   </footer>
+  
+  <script>
+    const darkThema = () => {
+      document.body.classList.toggle('dark')
+      console.log("click")
+    }
+  </script>
 </body>
 </html>
