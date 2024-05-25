@@ -26,9 +26,7 @@
     </style>
   </head>
 
-  <body
-    class="bg-[var(--LightGrayishBlue)]"
-  >
+  <body class="bg-[var(--LightGrayishBlue)]">
     <header class="grid grid-flow-rows gap-4 auto-rows-max">
       <div class="flex justify-between w-11/12 m-auto mt-10">
         <img src="images/logo.svg" alt="logo" width="100px" />
@@ -41,23 +39,29 @@
         </nav>
       </div>
       <div class="w-11/12 m-auto">
-        <img
-          src="images/illustration-1.svg"
-          alt="carpetas"
-          
-        />
+        <img src="images/illustration-1.svg" alt="carpetas" />
       </div>
       <div class="w-11/12 m-auto mt-10">
-        <p class="text-center text-3xl font-bold" >All your files in one secure location, accessible anywhere.</p>
-        <p class="text-center mt-10" >Fylo stores your most important files in one secure location. Access
+        <p class="text-center text-3xl font-bold">
+          All your files in one secure location, accessible anywhere.
+        </p>
+        <p class="text-center mt-10">
+          Fylo stores your most important files in one secure location. Access
           them wherever you need, share and collaborate with friends, family,
-          and co-workers.</p>
+          and co-workers.
+        </p>
       </div>
-      <div class="w-11/12 m-auto mt-10">
-        <form>
-          <input type="text" placeholder="Enter you email" />
+      <div class="flex flex-col justify-center w-11/12 m-auto mt-10">
+        <form class="pb-3">
+          <input
+            type="text"
+            placeholder="Enter you email"
+            class="rounded-md border border-black pl-2 py-1 w-full m-auto mt-10"
+          />
         </form>
-        <button>get Started</button>
+        <button class="bg-[--BrightBlue] p-2 text-white rounded-lg">
+          Get Started
+        </button>
       </div>
     </header>
     <main class="w-[90%] max-w-7xl mx-auto"></main>
