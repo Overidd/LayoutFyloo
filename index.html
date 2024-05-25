@@ -27,8 +27,8 @@
   </head>
 
   <body class="bg-[var(--LightGrayishBlue)]">
-    <header class="grid grid-flow-rows gap-4 auto-rows-max">
-      <div class="flex justify-between w-11/12 m-auto mt-10">
+    <header class="grid grid-flow-rows gap-1 lg:grid-cols-4">
+      <div class="flex justify-between w-11/12 m-auto mt-10 lg:col-span-4">
         <img src="images/logo.svg" alt="logo" width="100px" />
         <nav class="flex">
           <ul class="flex content-center gap-7 font-medium">
@@ -38,28 +38,38 @@
           </ul>
         </nav>
       </div>
-      <div class="w-11/12 m-auto">
+      <div
+        class="w-11/12 m-auto lg:col-span-2 lg:col-end-5 lg:row-span-2 lg:mt-10"
+      >
         <img src="images/illustration-1.svg" alt="carpetas" />
       </div>
-      <div class="w-11/12 m-auto mt-10">
-        <p class="text-center text-3xl font-bold">
+      <div
+        class="w-11/12 m-auto mt-10 lg:col-span-2 lg:row-end-3 lg:p-0 lg:m-0 lg:ml-12"
+      >
+        <p
+          class="text-center text-3xl font-bold lg:text-left lg:pb-1 lg:mt-28 lg:pt-11"
+        >
           All your files in one secure location, accessible anywhere.
         </p>
-        <p class="text-center mt-10">
+        <p class="text-center mt-10 lg:text-left lg:m-0">
           Fylo stores your most important files in one secure location. Access
           them wherever you need, share and collaborate with friends, family,
           and co-workers.
         </p>
       </div>
-      <div class="flex flex-col justify-center w-11/12 m-auto mt-10">
-        <form class="pb-3">
+      <div
+        class="flex flex-col justify-center w-11/12 m-auto mt-10 lg:col-span-2 lg:row-span-1 lg:flex-row lg:gap-1 lg:mt-2 lg:justify-stretch lg:ml-12"
+      >
+        <form class="pb-3 lg:p-0 lg:m-0 lg:w-full">
           <input
             type="text"
             placeholder="Enter you email"
-            class="rounded-md border border-black pl-2 py-1 w-full m-auto mt-10"
+            class="rounded-md border border-black pl-2 py-1 w-full m-auto mt-10 lg:mt-0 lg:rounded"
           />
         </form>
-        <button class="bg-[--BrightBlue] p-2 text-white rounded-lg">
+        <button
+          class="bg-[--BrightBlue] p-2 text-white rounded-lg lg:rounded lg:w-full lg:m-0 lg:p-0"
+        >
           Get Started
         </button>
       </div>
