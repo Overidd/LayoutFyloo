@@ -87,8 +87,7 @@
     -
   </header>
 
-  <main
-    class="bg-[var(--LightGrayishBlue)] text-[var(--VeryDarkBlue)] relative pb-20 mt-36 text-balance">
+  <main class="bg-[var(--LightGrayishBlue)] text-[var(--VeryDarkBlue)] relative pb-20 mt-36 ">
     <figure>
       <img src="images/bg-curve-mobile.svg" alt="" class=" absolute  bottom-[100%] w-full -z-10 md:hidden">
       <img src="images/bg-curve-desktop.svg" alt="" class=" hidden absolute bottom-[100%] -z-10 w-full md:block">
@@ -101,11 +100,11 @@
         <h2 class="font-bold text-xl md:text-4xl">
           Stay productive, wherever you are
         </h2>
-        <p class="font-medium opacity-60 md:text-xl">
+        <p class="font-normal opacity-60 md:text-xl text-left">
           Never let location be an issue when accessing your files. Fylo has you
           covered for all of your file storage needs.
         </p>
-        <p class="font-medium opacity-60 md:text-xl">
+        <p class="font-normal opacity-60 md:text-xl text-left">
           Securely share files and folders with friends, family and colleagues for
           live collaboration. No email attachments required!
         </p>
@@ -113,7 +112,7 @@
           <a href="#">See how Fylo works</a>
           <img src="images/icon-arrow.svg" alt="" class="inline-block w-5">
         </button>
-        <div class="bg-white md:max-w-[60%] shadow-xl p-8 space-y-3 rounded-lg text-left">
+        <div class="bg-white md:max-w-[70%] shadow-xl shadow-slate-200 p-8 space-y-3 rounded-lg text-left">
           <img src="images/icon-quotes.svg" alt="quotes" class="w-5">
           <p class="opacity-90 md:text-lg">
             Fylo has improved our team productivity by an order of magnitude. Since
@@ -131,14 +130,14 @@
     </section>
   </main>
 
-  <aside class="bg-[var(--Desaturatedblue)] text-white text-center text-balance">
-    <section
+  <aside class="bg-[var(--DesaturatedBlue)] text-white text-center text-balance">
+    <div
       class="w-[90%] m-auto flex flex-col justify-between items-center gap-8 md:flex-row py-16 xl:py-24 md:text-left">
       <div class="space-y-5 md:basis-[45%]">
         <h2 class="font-medium text-lg md:text-2xl">
-          Stay productive, wherever you are
+          Get early access today
         </h2>
-        <p class="opacity-80 md:text-lg">
+        <p class="opacity-100 md:text-lg font-light">
           It only takes a minute to sign up and our free starter tier is extremely generous.
           If you have any questions, our support team would be happy to help you.
         </p>
@@ -149,14 +148,45 @@
         <span class=" hidden peer-invalid:block ">
           please check your email
         </span>
+        <input type="text" placeholder="email@example.com" class=" shadow-md shadow-slate-600 p-2 w-full rounded-sm mb-3 md:p-4">
         <input type="submit" value="Get Started For Free"
-          class="bg-[var(--BrightBlue)] p-2 mt-3 w-full rounded-md cursor-pointer hover:brightness-110 hover:border-[var(--BrightBlue)] md:w-fit md:p-4 md:text-lg">
+          class="bg-[var(--BrightBlue)] p-2 mt-3 w-full rounded-md cursor-pointer hover:brightness-110 hover:border-[var(--BrightBlue)] md:w-fit md:p-4 md:text-lg shadow-md shadow-slate-600">
       </form>
     </section>
   </aside>
 
-  <footer class="w-[90%] max-w-7xl mx-auto">
-
+  <footer class="bg-[var(--VeryDarkBlue)] w-[100%] text-white text-balance">
+    <div class="py-20 md:py-24 w-[80%] md:w-[90%] m-auto flex flex-col md:flex-row justify-between flex-wrap space-y-12 font-light text-lg">
+      <figure class="basis-full">
+      <img src="images/logo.svg" class="brightness-0 invert-[100%]">
+      </figure>
+      <div class="space-y-3">
+      <p>
+        <img src="images/icon-phone.svg" class="inline-block align-middle">
+        <span class="ml-3">Phone: +1-543-123-4567</span>
+      </p>
+      <p>
+        <img src="images/icon-email.svg" class="inline-block align-middle">
+        <span class="ml-3">example@fylo.com</span>
+      </p>
+      </div>
+      <ul class="space-y-3">
+        <li>About Us</li>
+        <li>Jobs</li>
+        <li>Press</li>
+        <li>Blog</li>
+      </ul>
+      <ul class="space-y-3">
+        <li>Contact Us</li>
+        <li>Terms</li>
+        <li>Privacy</li>
+      </ul>
+      <figure class="invert-[100%] w-fit m-auto md:m-0 space-x-4 md:space-x-3 flex basis-[30%] items-start">
+        <img class="inline-block object-scale-down outline outline-1 outline-black rounded-3xl  w-8 p-2" src="images/facebook.svg">
+        <img class="inline-block object-scale-down outline outline-1 outline-black rounded-3xl  w-8" src="images/twitter.svg">
+        <img class="inline-block object-scale-down outline outline-1 outline-black rounded-3xl  w-8" src="images/instagram.svg">
+      </figure>
+    </div>
   </footer>
   
   <script>
@@ -166,4 +196,5 @@
     }
   </script>
 </body>
+
 </html>
