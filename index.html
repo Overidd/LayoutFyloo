@@ -1,90 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Frontend Mentor | Fylo landing page with two column layout</title>
-    <style>
-      * {
-        --VeryDarkBlue: hsl(243, 87%, 12%);
-        --Desaturatedblue: hsl(238, 22%, 44%);
-        --BrightBlue: hsl(224, 93%, 58%);
-        --ModerateCyan: hsl(170, 45%, 43%);
-        --LightGrayishBlue: hsl(240, 75%, 98%);
-        --LightGray: hsl(0, 0%, 75%);
 
-        /* El uso Con -[var(--nombre_de_la_variable)] */
-      }
-    </style>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Frontend Mentor | Fylo landing page with two column layout</title>
+  <style>
+    * {
+      --VeryDarkBlue: hsl(243, 87%, 12%);
+      --Desaturatedblue: hsl(238, 22%, 44%);
+      --BrightBlue: hsl(224, 93%, 58%);
+      --ModerateCyan: hsl(170, 45%, 43%);
+      --LightGrayishBlue: hsl(240, 75%, 98%);
+      --LightGray: hsl(0, 0%, 75%);
+      
+      /* El uso Con -[var(--nombre_de_la_variable)] */
+    }
+  
+  </style>
+</head>
 
-  <body class="bg-[var(--LightGrayishBlue)]">
-    <header class="grid grid-flow-rows gap-1 lg:grid-cols-4">
-      <div class="flex justify-between w-11/12 m-auto mt-10 lg:col-span-4">
-        <img src="images/logo.svg" alt="logo" width="100px" />
-        <nav class="flex">
-          <ul class="flex content-center gap-7 font-medium">
-            <li><a>Features</a></li>
-            <li><a>Team</a></li>
-            <li><a>Sign In</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div
-        class="w-11/12 m-auto lg:col-span-2 lg:col-end-5 lg:row-span-2 lg:mt-10"
-      >
-        <img src="images/illustration-1.svg" alt="carpetas" />
-      </div>
-      <div
-        class="w-11/12 m-auto mt-10 lg:col-span-2 lg:row-end-3 lg:p-0 lg:m-0 lg:ml-12"
-      >
-        <p
-          class="text-center text-3xl font-bold lg:text-left lg:pb-1 lg:mt-28 lg:pt-11"
-        >
-          All your files in one secure location, accessible anywhere.
-        </p>
-        <p class="text-center mt-10 lg:text-left lg:m-0">
-          Fylo stores your most important files in one secure location. Access
-          them wherever you need, share and collaborate with friends, family,
-          and co-workers.
-        </p>
-      </div>
-      <div
-        class="flex flex-col justify-center w-11/12 m-auto mt-10 lg:col-span-2 lg:row-span-1 lg:flex-row lg:gap-1 lg:mt-2 lg:justify-stretch lg:ml-12"
-      >
-        <form class="pb-3 lg:p-0 lg:m-0 lg:w-full">
-          <input
-            type="text"
-            placeholder="Enter you email"
-            class="rounded-md border border-black pl-2 py-1 w-full m-auto mt-10 lg:mt-0 lg:rounded"
-          />
-        </form>
-        <button
-          class="bg-[--BrightBlue] p-2 text-white rounded-lg lg:rounded lg:w-full lg:m-0 lg:p-0"
-        >
-          Get Started
-        </button>
-      </div>
-    </header>
-    <main class="w-[90%] max-w-7xl mx-auto"></main>
-    <footer class="w-[90%] max-w-7xl mx-auto"></footer>
-  </body>
-<body class="">
-  <label for="check" class="bg-gray-500 mt-16 block w-16 ">
-    <div class="bg-white"></div>
-    <input type="checkbox" onclick="darkThema()">
-  </label>
-
-
-  <header class="w-[90%] max-w-7xl mx-auto">
-    -
+<body class="bg-white">
+  <header class="grid grid-flow-rows gap-1 lg:grid-cols-4">
+    <div class="flex justify-between w-11/12 m-auto mt-10 lg:col-span-4">
+      <img src="images/logo.svg" alt="logo" width="100px" />
+      <nav class="flex">
+        <ul class="flex content-center gap-7 font-medium">
+          <li><a>Features</a></li>
+          <li><a>Team</a></li>
+          <li><a>Sign In</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="w-11/12 m-auto lg:col-span-2 lg:col-end-5 lg:row-span-2 lg:mt-10">
+      <img src="images/illustration-1.svg" alt="carpetas" />
+    </div>
+    <div class="w-11/12 m-auto mt-10 lg:col-span-2 lg:row-end-3 lg:p-0 lg:m-0 lg:ml-12 ">
+      <p class="text-center text-3xl font-bold lg:text-left lg:pb-1 lg:mt-28 lg:pt-11 lg:text-4xl leading-[100px] h-[20vh]">
+        All your files in one secure location, accessible anywhere.
+      </p>
+      <!-- <p class=" text-6xl"> -->
+        All your files in one secure location, accessible anywhere.
+      </p>
+      <p class="text-center mt-10 lg:text-left lg:m-0">
+        Fylo stores your most important files in one secure location. Access
+        them wherever you need, share and collaborate with friends, family,
+        and co-workers.
+      </p>
+    </div>
+    <div
+      class="flex flex-col justify-center w-11/12 m-auto mt-10 lg:col-span-2 lg:row-span-1 lg:flex-row lg:gap-1 lg:mt-2 lg:justify-stretch lg:ml-12">
+      <form class="pb-3 lg:p-0 lg:m-0 lg:w-full">
+        <input type="text" placeholder="Enter you email"
+          class="rounded-md border border-black pl-2 py-3 md:py-4 w-full m-auto mt-10 lg:mt-0 lg:rounded" />
+      </form>
+      <button class="bg-[--BrightBlue] py-2 text-white rounded-lg lg:rounded lg:w-[45%] lg:m-0 lg:p-0 ">
+        Get Started
+      </button>
+    </div>
   </header>
 
   <main class="bg-[var(--LightGrayishBlue)] text-[var(--VeryDarkBlue)] relative pb-20 mt-36 ">
@@ -130,7 +105,7 @@
     </section>
   </main>
 
-  <aside class="bg-[var(--DesaturatedBlue)] text-white text-center text-balance">
+  <aside class="bg-[var(--Desaturatedblue)] text-white text-center text-balance">
     <div
       class="w-[90%] m-auto flex flex-col justify-between items-center gap-8 md:flex-row py-16 xl:py-24 md:text-left">
       <div class="space-y-5 md:basis-[45%]">
@@ -143,32 +118,32 @@
         </p>
       </div>
       <form action="" class="w-[85%] md:basis-[45%]">
-        <input type="email" placeholder="email@example.com" 
-          class="w-full p-2 text-[var(--DesaturatedBlue)] font-medium rounded-md focus-visible:outline-none border border-transparent invalid:border-red-600 peer md:p-4 md:text-lg"/>
+        <input type="email" placeholder="email@example.com"
+          class="w-full p-2 text-[var(--DesaturatedBlue)] font-medium rounded-md focus-visible:outline-none border border-transparent invalid:border-red-600 peer md:p-4 md:text-lg text-black" />
         <span class=" hidden peer-invalid:block ">
           please check your email
         </span>
-        <input type="text" placeholder="email@example.com" class=" shadow-md shadow-slate-600 p-2 w-full rounded-sm mb-3 md:p-4">
         <input type="submit" value="Get Started For Free"
           class="bg-[var(--BrightBlue)] p-2 mt-3 w-full rounded-md cursor-pointer hover:brightness-110 hover:border-[var(--BrightBlue)] md:w-fit md:p-4 md:text-lg shadow-md shadow-slate-600">
       </form>
-    </section>
+      </section>
   </aside>
 
   <footer class="bg-[var(--VeryDarkBlue)] w-[100%] text-white text-balance">
-    <div class="py-20 md:py-24 w-[80%] md:w-[90%] m-auto flex flex-col md:flex-row justify-between flex-wrap space-y-12 font-light text-lg">
+    <div
+      class="py-20 md:py-24 w-[80%] md:w-[90%] m-auto flex flex-col md:flex-row justify-between flex-wrap space-y-12 font-light text-lg">
       <figure class="basis-full">
-      <img src="images/logo.svg" class="brightness-0 invert-[100%]">
+        <img src="images/logo.svg" class="brightness-0 invert-[100%]">
       </figure>
       <div class="space-y-3">
-      <p>
-        <img src="images/icon-phone.svg" class="inline-block align-middle">
-        <span class="ml-3">Phone: +1-543-123-4567</span>
-      </p>
-      <p>
-        <img src="images/icon-email.svg" class="inline-block align-middle">
-        <span class="ml-3">example@fylo.com</span>
-      </p>
+        <p>
+          <img src="images/icon-phone.svg" class="inline-block align-middle">
+          <span class="ml-3">Phone: +1-543-123-4567</span>
+        </p>
+        <p>
+          <img src="images/icon-email.svg" class="inline-block align-middle">
+          <span class="ml-3">example@fylo.com</span>
+        </p>
       </div>
       <ul class="space-y-3">
         <li>About Us</li>
@@ -182,19 +157,14 @@
         <li>Privacy</li>
       </ul>
       <figure class="invert-[100%] w-fit m-auto md:m-0 space-x-4 md:space-x-3 flex basis-[30%] items-start">
-        <img class="inline-block object-scale-down outline outline-1 outline-black rounded-3xl  w-8 p-2" src="images/facebook.svg">
-        <img class="inline-block object-scale-down outline outline-1 outline-black rounded-3xl  w-8" src="images/twitter.svg">
-        <img class="inline-block object-scale-down outline outline-1 outline-black rounded-3xl  w-8" src="images/instagram.svg">
+        <img class="inline-block object-scale-down outline outline-1 outline-black rounded-3xl  w-8 p-2"
+          src="images/facebook.svg">
+        <img class="inline-block object-scale-down outline outline-1 outline-black rounded-3xl  w-8"
+          src="images/twitter.svg">
+        <img class="inline-block object-scale-down outline outline-1 outline-black rounded-3xl  w-8"
+          src="images/instagram.svg">
       </figure>
     </div>
   </footer>
-  
-  <script>
-    const darkThema = () => {
-      document.body.classList.toggle('dark')
-      console.log("click")
-    }
-  </script>
 </body>
-
 </html>
